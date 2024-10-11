@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mta-commute-karma"
+version = "0.1.0"
+description = ""
+authors = ["hank shen <hank.shen@komodohealth.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = "^0.31.1"
+fastapi = "^0.115.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
