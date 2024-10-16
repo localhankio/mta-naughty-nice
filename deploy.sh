@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
-scp ./README.md \
-./pyproject.toml \
+scp ./pyproject.toml \
 ./poetry.lock \
 ./startup_services.sh \
-./src/* \
+./src/ \
 root@165.227.96.135:/root/mta-naughty-nice/

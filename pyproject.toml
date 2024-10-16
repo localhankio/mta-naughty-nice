@@ -2,14 +2,14 @@
 name = "mta-naughty-nice"
 version = "0.1.0"
 description = ""
-authors = ["hank shen <hank.shen@komodohealth.com>"]
+authors = ["hank shen <hank@localhank.io>"]
 readme = "README.md"
-package-mode = false
+packages = [{ include = "src", from = "." }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-uvicorn = "^0.31.1"
-fastapi = "^0.115.0"
+uvicorn = "0.32.0"
+fastapi = "0.115.2"
 pymongo = "^4.10.1"
 
 
