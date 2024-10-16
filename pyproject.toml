@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "mta-commute-karma"
+name = "mta-naughty-nice"
 version = "0.1.0"
 description = ""
 authors = ["hank shen <hank.shen@komodohealth.com>"]
@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.11"
 uvicorn = "^0.31.1"
 fastapi = "^0.115.0"
+pymongo = "^4.10.1"
 
 
 [build-system]
