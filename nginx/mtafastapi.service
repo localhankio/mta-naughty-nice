@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve MTA Naughty or Nice
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/root/mta-naughty-nice
+Environment="PATH=/root/mta-naughty-nice/.venv/bin"
+    ExecStart=/root/mta-naughty-nice/.venv/bin/uvicorn app:app --host 0.0.0.0 --port 8000
+
+[Install]
+WantedBy=multi-user.target

@@ -12,6 +12,7 @@
    apt install pipx
    pipx install poetry
     ```
-4. `brew services start mongodb-community@8.0`
-   `brew services stop mongodb-community@8.0`
-5. 
+4. Local steps
+   1. `brew services start mongodb-community@8.0`
+   2. `brew services stop mongodb-community@8.0`
+5. server step: run `./startup_services.sh`
