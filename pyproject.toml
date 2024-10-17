@@ -11,6 +11,8 @@ python = "^3.11"
 uvicorn = "0.32.0"
 fastapi = "0.115.2"
 pymongo = "^4.10.1"
+sqlalchemy = "^2.0.36"
+psycopg2 = "^2.9.10"
 
 
 [build-system]
