@@ -4,6 +4,7 @@ Naughty train line of the month, and nice train line of the month.
 ## local setup
 Start in the project root directory for these instructions.
 1. install poetry
+2. install postgresql
 2. (optional) `poetry config virtualenvs.in-project true`. This creates a virtualenv in your working directory
 3. `source .venv/bin/activate`
 4. `poetry install` to install dependencies
