@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react'
 import MonthToggle from './components/month-toggle'
-import Image from 'next/image'
 
 export default function Main() {
   const imageUrl = '/img/tile-grid.png' // or a URL from props/state
@@ -44,7 +43,7 @@ export default function Main() {
 
           <div className="flex flex-col pl-[50vw] pt-[8vw] absolute top-[5px]">
             <h1 className="text-4xl font-bold my-8 tracking-tight">
-              We're making a list.
+              We&#39;re making a list.
             </h1>
             <img src="/img/sign1.jpg" className="w-[500px]"></img>
           </div>
@@ -81,7 +80,7 @@ export default function Main() {
 
           <div className="flex flex-col pl-[10vw] pt-[8vw] absolute top-[20px]">
             <h1 className="text-4xl font-bold my-8 tracking-tight">
-              We're checking it twice.
+              We&#39;re checking it twice.
             </h1>
             <img src="/img/sign2.png" className="w-[500px]"></img>
           </div>
@@ -96,7 +95,7 @@ export default function Main() {
 
         <section className="bg-neutral-900 h-[106vh] relative overflow-hidden">
           <h1 className="text-4xl font-bold text-white m-auto text-center tracking-tight relative py-20 z-20">
-            We’ve finally found out which lines are:
+            We&#39;ve finally found out which lines are:
           </h1>
 
           <div className="relative">
@@ -129,8 +128,8 @@ export default function Main() {
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
           <h1 className="text-4xl font-bold m-auto text-center tracking-tight relative py-20 z-10">
-            It’s tiiiiiiime..... <br></br>See the naughty and nice lines for the
-            month of:
+            It&#39;s tiiiiiiime..... <br></br>See the naughty and nice lines for
+            the month of:
           </h1>
           <MonthToggle />
         </section>
