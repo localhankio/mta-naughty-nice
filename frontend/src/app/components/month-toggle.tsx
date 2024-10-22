@@ -35,34 +35,52 @@ const MonthSelector: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center gap-4">
         {/* Toggle Left Button */}
         <button
           onClick={handlePrev}
-          className="bg-gray-300 p-2 rounded"
+          className="p-2 m-4"
           aria-label="Previous Month"
         >
-          &#9664; {/* Left Arrow */}
+          <img src="img/rat-point.svg" alt="" />
         </button>
 
-        {/* Display selected month */}
-        <div className="text-[100px] font-bold">{months[monthIndex]}</div>
+        <div className="p-4 m-auto bg-[#73A29E] inline-block">
+          <div className="px-6 py-3 bg-[#1A2D70] inline-block">
+            {/* Display selected month */}
+            <div className="text-[100px] font-mono text-white leading-tight uppercase tracking-tight">
+              {months[monthIndex]}
+            </div>
+          </div>
+        </div>
 
         {/* Toggle Right Button */}
         <button
           onClick={handleNext}
-          className="bg-gray-300 p-2 rounded"
+          className="p-2 m-4"
           aria-label="Next Month"
         >
-          &#9654; {/* Right Arrow */}
+          <img
+            src="img/rat-point.svg"
+            className="transform scale-x-[-1]"
+            alt=""
+          />
         </button>
       </div>
 
       {/* Submit Button */}
 
       <Link href={`/${months[monthIndex].toLowerCase()}`}>
-        <button className="bg-blue-500 text-white px-8 py-4 rounded m-10">
-          Take the train
+        <button className="px-8 py-4 m-10 flex flex-col items-center transform transition-transform duration-300 ease-in-out hover:translate-y-[-8px]">
+          <p className="font-mono uppercase mb-4">
+            Click the metrocard to see the results!
+          </p>
+
+          <img
+            src="/img/metrocard.png"
+            className="transform transition-transform duration-300 ease-in-out hover:shadow-[0_4px_100px_#FFC801]"
+            alt=""
+          />
         </button>
       </Link>
     </div>

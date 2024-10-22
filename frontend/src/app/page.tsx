@@ -127,7 +127,7 @@ export default function Main() {
           className="scroll-section overflow-hidden relative bg-repeat bg-[size:160px] bg-opacity-50 py-12"
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
-          <h1 className="text-4xl font-bold m-auto text-center tracking-tight relative py-20 z-10">
+          <h1 className="text-4xl font-bold m-auto text-center tracking-tight relative py-12 z-10">
             It&#39;s tiiiiiiime..... <br></br>See the naughty and nice lines for
             the month of:
           </h1>
