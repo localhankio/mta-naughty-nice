@@ -5,6 +5,7 @@ import MonthToggle from './components/month-toggle'
 
 export default function Main() {
   const imageUrl = '/img/tile-grid.png' // or a URL from props/state
+  const subwayBgUrl = '/img/bg-rail.svg' // or a URL from props/state
 
   const [translateX, setTranslateX] = useState(100) // Start from right
 
@@ -94,19 +95,21 @@ export default function Main() {
         </section>
 
         <section className="bg-neutral-900 h-[106vh] relative overflow-hidden">
-          <h1 className="text-4xl font-bold text-white m-auto text-center tracking-tight relative py-20 z-20">
+          <h1 className="text-4xl font-bold text-white m-auto text-center tracking-tight relative py-12 z-20">
             We&#39;ve finally found out which lines are:
           </h1>
 
           <div className="relative">
             <div className="flex justify-center -space-x-8 z-20">
-              <div className="flex flex-col items-center ">
-                <img src="/img/naughty.svg" alt="" className="z-20" />
+              <div className="flex flex-col items-center">
+                <img src="/img/naughty.svg" alt="" className="z-20 m-4" />
                 <br></br>
-                <img src="/img/naughty-train.svg" alt="" className="z-0" />
+                <div className="transform transition-transform duration-300 ease-in-out hover:shadow-[0_4px_100px_#E70000] hover:translate-y-[-8px] rounded-full">
+                  <img src="/img/naughty-train.svg" alt="" className="z-0" />
+                </div>
               </div>
               <div className="flex flex-col items-center">
-                <img src="/img/or.svg" alt="" className="z-20" />
+                <img src="/img/or.svg" alt="" className="z-20 m-4" />
                 <br></br>
                 <img
                   src="/img/platform.svg"
@@ -115,9 +118,11 @@ export default function Main() {
                 />
               </div>
               <div className="flex flex-col items-center">
-                <img src="/img/nice.svg" alt="" className="z-20" />
+                <img src="/img/nice.svg" alt="" className="z-20 m-4" />
                 <br></br>
-                <img src="/img/nice-train.svg" alt="" className="z-0" />
+                <div className="transform transition-transform duration-300 ease-in-out hover:shadow-[0_4px_100px_#11760E] hover:translate-y-[-8px] rounded-full">
+                  <img src="/img/nice-train.svg" alt="" className="z-0" />
+                </div>
               </div>
             </div>
           </div>
