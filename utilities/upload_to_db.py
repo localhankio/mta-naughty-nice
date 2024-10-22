@@ -2,6 +2,9 @@ import os
 from datetime import datetime, timedelta
 import psycopg2
 
+
+# Code to import the CSV fils dowrloaded by download_mta_data.py to our PostgreSQL database
+
 host = os.environ['DB_HOSTNAME']
 user = os.environ['DB_USERNAME']
 password = os.environ['DB_PASSWORD']

@@ -9,8 +9,8 @@ from sqlalchemy.orm import relationship
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 
-# prereqs
-# install postgres
+
+# This is for educational purposes. Used to test database and ORM connection
 
 class Base(DeclarativeBase):
     pass

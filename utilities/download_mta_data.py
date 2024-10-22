@@ -5,14 +5,16 @@ import os
 import requests
 
 
+# Code to download MTA hourly ridership data by hour, and write to a local CSV file for every 24 hours of data.
+
 url = f"https://data.ny.gov/resource/wujg-7c2s.json"
 headers = {
     'X-App-Token': os.environ['MTA_APP_TOKEN']
 }
 
 limit = 100000
-start_stamp = '2024-01-01T00:00:00.000'
-end_stamp = '2024-09-30T00:00:00.000'
+start_stamp = '2023-01-01T00:00:00.000'
+end_stamp = '2023-12-31T00:00:00.000'
 
 start_timestamp = datetime.strptime(start_stamp, '%Y-%m-%dT%H:%M:%S.%f')
 transit_timestamp = datetime.strptime(start_stamp, '%Y-%m-%dT%H:%M:%S.%f')
@@ -21,12 +23,12 @@ end_timestamp = datetime.strptime(end_stamp, '%Y-%m-%dT%H:%M:%S.%f')
 batch_24_hour = []
 batch_count = 0
 while transit_timestamp <= end_timestamp:
-    strtstamp = transit_timestamp.isoformat()
-    print(f"Requesting for timestamp: {strtstamp}")
+    tstamp_param = transit_timestamp.isoformat()
+    print(f"Requesting for timestamp: {tstamp_param}")
     params = {
         "$limit": limit,
         "transit_mode": "subway",
-        "transit_timestamp": strtstamp
+        "transit_timestamp": tstamp_param
     }
     response = requests.request("GET", url, headers=headers, params=params)
     hourly_data = response.json()  # list of data
@@ -45,9 +47,9 @@ while transit_timestamp <= end_timestamp:
     batch_count += events
     if transit_timestamp.hour == 0 or transit_timestamp == start_timestamp:
         file_prefix = "./mta_hourly"
-        file_path = f"{file_prefix}_{strtstamp}.csv"
+        file_path = f"{file_prefix}_{tstamp_param}.csv"
         print(
-            f'At day {transit_timestamp.day}, hour {transit_timestamp.hour}, writing to file {strtstamp}. count: {len(batch_24_hour)}, batch_count, {batch_count}')
+            f'At day {transit_timestamp.day}, hour {transit_timestamp.hour}, writing to file {tstamp_param}. count: {len(batch_24_hour)}, batch_count, {batch_count}')
         with open(file_path, "w", newline="") as f_part:
             dict_writer = csv.DictWriter(f_part, keys, lineterminator='\n')
             dict_writer.writeheader()
