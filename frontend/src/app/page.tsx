@@ -64,7 +64,7 @@ export default function Main() {
             className="bottom-14 z-100 transform scale-x-[-1]"
             style={{
               position: 'absolute',
-              right: `${translateX * 1.2 + 40}vw`, // Move image from right to left
+              right: `${translateX + 40}vw`, // Move image from right to left
               transition: 'right 0.1s ease-out', // Smooth transition
             }}
           />
