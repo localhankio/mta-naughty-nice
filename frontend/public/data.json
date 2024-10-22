@@ -1,0 +1,55 @@
+{
+  "mta_data": [
+    {
+      "month": "january",
+      "naughty_line": "F",
+      "nice_line": "L",
+      "naughty_busyness_rank": "20",
+      "naughty_busyness_note": "This train was 35% busier than average train line",
+      "naughty_ontime_rank": "18",
+      "naughty_ontime_note": "This train was always late!",
+      "naughty_reliability_rank": "17",
+      "naughty_reliability_note": "This train was not reliable",
+      "nice_busyness_rank": "2",
+      "nice_busyness_note": "This train was not busy at all!",
+      "nice_ontime_rank": "2",
+      "nice_ontime_note": "This train is very on time! Oh wow!!11!",
+      "nice_reliability_rank": "1",
+      "nice_reliability_note": "Super reliable!"
+    },
+    {
+      "month": "february",
+      "naughty_line": "A",
+      "nice_line": "B",
+      "naughty_busyness_rank": "20",
+      "naughty_busyness_note": "This train was 35% busier than average train line",
+      "naughty_ontime_rank": "18",
+      "naughty_ontime_note": "This train was always late!",
+      "naughty_reliability_rank": "17",
+      "naughty_reliability_note": "This train was not reliable",
+      "nice_busyness_rank": "2",
+      "nice_busyness_note": "This train was not busy at all!",
+      "nice_ontime_rank": "2",
+      "nice_ontime_note": "This train is very on time! Oh wow!!11!",
+      "nice_reliability_rank": "1",
+      "nice_reliability_note": "Super reliable!"
+    },
+    {
+      "month": "march",
+      "naughty_line": "C",
+      "nice_line": "D",
+      "naughty_busyness_rank": "20",
+      "naughty_busyness_note": "This train was 35% busier than average train line",
+      "naughty_ontime_rank": "18",
+      "naughty_ontime_note": "This train was always late!",
+      "naughty_reliability_rank": "17",
+      "naughty_reliability_note": "This train was not reliable",
+      "nice_busyness_rank": "2",
+      "nice_busyness_note": "This train was not busy at all!",
+      "nice_ontime_rank": "2",
+      "nice_ontime_note": "This train is very on time! Oh wow!!11!",
+      "nice_reliability_rank": "1",
+      "nice_reliability_note": "Super reliable!"
+    }
+  ]
+}
