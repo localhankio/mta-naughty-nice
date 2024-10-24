@@ -179,13 +179,13 @@ export default function MonthPage() {
             <div className="flex flex-row justify-center">
               <div className="flex flex-col p-[8vw] gap-20 border-r-2 border-black">
                 <TextBlock
-                  overline="BUSYNESS"
+                  overline="CROWDEDNESS"
                   color="bg-[#FF8840]"
                   header={monthData.naughty_busyness_rank}
                   description={monthData.naughty_busyness_note}
                 />
                 <TextBlock
-                  overline="TARDINESS"
+                  overline="TIMELINESS"
                   color="bg-[#FFC801]"
                   header={monthData.naughty_ontime_rank}
                   description={monthData.naughty_ontime_note}
@@ -199,13 +199,13 @@ export default function MonthPage() {
               </div>
               <div className="flex flex-col p-[8vw] gap-20">
                 <TextBlock
-                  overline="BUSYNESS"
+                  overline="CROWDEDNESS"
                   color="bg-[#FF8840]"
                   header={monthData.nice_busyness_rank}
                   description={monthData.nice_busyness_note}
                 />
                 <TextBlock
-                  overline="TARDINESS"
+                  overline="TIMELINESS"
                   color="bg-[#FFC801]"
                   header={monthData.nice_ontime_rank}
                   description={monthData.nice_ontime_note}
@@ -213,8 +213,8 @@ export default function MonthPage() {
                 <TextBlock
                   overline="MAJOR INCIDENTS"
                   color="bg-[#9FC438]"
-                  header={monthData.nice_ontime_rank}
-                  description={monthData.nice_ontime_note}
+                  header={monthData.nice_reliability_rank}
+                  description={monthData.nice_reliability_note}
                 />
               </div>
 
