@@ -87,7 +87,7 @@ export default function MonthPage() {
         }
         const data = await response.json()
         const monthEntry = data.mta_data.find(
-          (entry: MtaData) => entry.month === id
+          (entry: MtaData) => entry.month.toLowerCase() === id
         )
         setMonthData(monthEntry || null)
       } catch (error) {
@@ -201,20 +201,20 @@ export default function MonthPage() {
                 <TextBlock
                   overline="BUSYNESS"
                   color="bg-[#FF8840]"
-                  header={monthData.naughty_busyness_rank}
-                  description={monthData.naughty_busyness_note}
+                  header={monthData.nice_busyness_rank}
+                  description={monthData.nice_busyness_note}
                 />
                 <TextBlock
                   overline="TARDINESS"
                   color="bg-[#FFC801]"
-                  header={monthData.naughty_ontime_rank}
-                  description={monthData.naughty_ontime_note}
+                  header={monthData.nice_ontime_rank}
+                  description={monthData.nice_ontime_note}
                 />
                 <TextBlock
                   overline="MAJOR INCIDENTS"
                   color="bg-[#9FC438]"
-                  header={monthData.naughty_reliability_rank}
-                  description={monthData.naughty_reliability_note}
+                  header={monthData.nice_ontime_rank}
+                  description={monthData.nice_ontime_note}
                 />
               </div>
 
