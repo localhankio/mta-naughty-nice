@@ -1,3 +1,5 @@
+-- noinspection SqlDialectInspectionForFile
+
 --
 Author: Kristina Cheng
 --
