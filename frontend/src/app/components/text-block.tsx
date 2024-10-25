@@ -16,7 +16,7 @@ const TextBlock: React.FC<Props> = ({
   return (
     <div className="flex flex-col items-start">
       <div className={`py-1 px-2 ${color} border-black border-2 mb-6`}>
-        <h4 className="text-m font-mono inline tracking-tight">{overline}</h4>
+        <h4 className="text-sm font-mono inline tracking-tight">{overline}</h4>
       </div>
       <h1 className="text-[3vw] font-bold tracking-tight mb-2 leading-tight">
         Rank {header} / 21
