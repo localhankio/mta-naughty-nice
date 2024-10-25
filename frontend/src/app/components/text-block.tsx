@@ -19,7 +19,7 @@ const TextBlock: React.FC<Props> = ({
         <h4 className="text-m font-mono inline tracking-tight">{overline}</h4>
       </div>
       <h1 className="text-[50px] font-bold tracking-tight leading-tight">
-        {header} / 21
+        Top {header}
       </h1>
       <p className="text-l p-0">{description}</p>
     </div>

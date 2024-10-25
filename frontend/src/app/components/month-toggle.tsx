@@ -39,7 +39,7 @@ const MonthSelector: React.FC = () => {
         {/* Toggle Left Button */}
         <button
           onClick={handlePrev}
-          className="p-2 m-4"
+          className="p-2 m-4 w-[10vw]"
           aria-label="Previous Month"
         >
           <img src="img/rat-point.svg" alt="" />
@@ -48,7 +48,7 @@ const MonthSelector: React.FC = () => {
         <div className="p-4 m-auto bg-[#73A29E] inline-block">
           <div className="px-6 py-3 bg-[#1A2D70] inline-block">
             {/* Display selected month */}
-            <div className="text-[100px] font-mono text-white leading-tight uppercase tracking-tight">
+            <div className="text-[5vw] font-mono text-white leading-tight uppercase tracking-tight">
               {months[monthIndex]}
             </div>
           </div>
@@ -57,7 +57,7 @@ const MonthSelector: React.FC = () => {
         {/* Toggle Right Button */}
         <button
           onClick={handleNext}
-          className="p-2 m-4"
+          className="p-2 m-4 w-[10vw]"
           aria-label="Next Month"
         >
           <img

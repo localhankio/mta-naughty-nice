@@ -127,13 +127,13 @@ export default function MonthPage() {
         </section>
 
         <section
-          className="overflow-hidden relative bg-cover h-screen bg-fixed bg-center"
+          className="overflow-hidden relative bg-cover bg-fixed bg-center"
           style={{ backgroundImage: `url(${subwayBgUrl})` }}
         >
           <div className="relative">
             <div className="flex justify-center m-10">
               <div className="flex flex-col items-center p-10">
-                <h2 className="text-3xl font-bold text-white text-center tracking-tight relative">
+                <h2 className="text-[3vw] font-bold text-white text-center tracking-tight relative">
                   The Naughty Line
                 </h2>
                 <div
@@ -147,11 +147,15 @@ export default function MonthPage() {
                     {monthData.naughty_line}
                   </h2>
                 </div>
-                <img src="/img/naughty-train.svg" alt="" className="z-0" />
+                <img
+                  src="/img/naughty-train.svg"
+                  alt=""
+                  className="z-0 max-w-[30vw]"
+                />
               </div>
 
               <div className="flex flex-col items-center p-10">
-                <h2 className="text-3xl font-bold text-white text-center tracking-tight relative">
+                <h2 className="text-[3vw] font-bold text-white text-center tracking-tight relative">
                   The Nice Line
                 </h2>
                 <div
@@ -165,7 +169,11 @@ export default function MonthPage() {
                     {monthData.nice_line}
                   </h2>
                 </div>
-                <img src="/img/nice-train.svg" alt="" className="z-0" />
+                <img
+                  src="/img/nice-train.svg"
+                  alt=""
+                  className="z-0 max-w-[30vw]"
+                />
               </div>
             </div>
           </div>
@@ -176,16 +184,16 @@ export default function MonthPage() {
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
           <div className="m-auto">
-            <div className="flex flex-row justify-center">
-              <div className="flex flex-col p-[8vw] gap-20 border-r-2 border-black">
+            <div className="grid grid-cols-2 justify-center w-[80vw] m-auto">
+              <div className="grid grid-rows-3  p-[5vw] max-w-[40vw] gap-16 border-r-2 border-black">
                 <TextBlock
-                  overline="CROWDEDNESS"
+                  overline="BUSYNESS"
                   color="bg-[#FF8840]"
                   header={monthData.naughty_busyness_rank}
                   description={monthData.naughty_busyness_note}
                 />
                 <TextBlock
-                  overline="TIMELINESS"
+                  overline="TARDINESS"
                   color="bg-[#FFC801]"
                   header={monthData.naughty_ontime_rank}
                   description={monthData.naughty_ontime_note}
@@ -197,15 +205,15 @@ export default function MonthPage() {
                   description={monthData.naughty_reliability_note}
                 />
               </div>
-              <div className="flex flex-col p-[8vw] gap-20">
+              <div className="grid grid-rows-3 p-[5vw] max-w-[40vw] gap-16">
                 <TextBlock
-                  overline="CROWDEDNESS"
+                  overline="BUSYNESS"
                   color="bg-[#FF8840]"
                   header={monthData.nice_busyness_rank}
                   description={monthData.nice_busyness_note}
                 />
                 <TextBlock
-                  overline="TIMELINESS"
+                  overline="TARDINESS"
                   color="bg-[#FFC801]"
                   header={monthData.nice_ontime_rank}
                   description={monthData.nice_ontime_note}
@@ -213,8 +221,8 @@ export default function MonthPage() {
                 <TextBlock
                   overline="MAJOR INCIDENTS"
                   color="bg-[#9FC438]"
-                  header={monthData.nice_reliability_rank}
-                  description={monthData.nice_reliability_note}
+                  header={monthData.naughty_reliability_rank}
+                  description={monthData.naughty_reliability_note}
                 />
               </div>
 
