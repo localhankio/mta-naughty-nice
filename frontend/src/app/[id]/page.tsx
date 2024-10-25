@@ -221,8 +221,8 @@ export default function MonthPage() {
                 <TextBlock
                   overline="MAJOR INCIDENTS"
                   color="bg-[#9FC438]"
-                  header={monthData.nice_ontime_rank}
-                  description={monthData.nice_ontime_note}
+                  header={monthData.naughty_reliability_rank}
+                  description={monthData.naughty_reliability_note}
                 />
               </div>
 
