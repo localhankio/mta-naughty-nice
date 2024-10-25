@@ -94,7 +94,7 @@ export default function Main() {
           {/* </div> */}
         </section>
 
-        <section className="bg-neutral-900 relative p-12 overflow-hidden">
+        <section className="bg-neutral-900 relative p-20 overflow-hidden">
           <h1 className="text-[3vw] font-bold text-white m-auto text-center tracking-tight relative mb-10 z-20">
             We&#39;ve finally found out which lines are:
           </h1>
@@ -105,7 +105,11 @@ export default function Main() {
                 <img src="/img/naughty.svg" alt="" className="z-20 m-4" />
                 <br></br>
                 <div className="transform transition-transform duration-300 ease-in-out hover:shadow-[0_4px_100px_#E70000] hover:translate-y-[-8px] rounded-full">
-                  <img src="/img/naughty-train.svg" alt="" className="z-0" />
+                  <img
+                    src="/img/naughty-train.svg"
+                    alt=""
+                    className="max-w-[30vw] z-0"
+                  />
                 </div>
               </div>
               <div className="flex flex-col items-center">
@@ -121,7 +125,11 @@ export default function Main() {
                 <img src="/img/nice.svg" alt="" className="z-20 m-4" />
                 <br></br>
                 <div className="transform transition-transform duration-300 ease-in-out hover:shadow-[0_4px_100px_#11760E] hover:translate-y-[-8px] rounded-full">
-                  <img src="/img/nice-train.svg" alt="" className="z-0" />
+                  <img
+                    src="/img/nice-train.svg"
+                    alt=""
+                    className="max-w-[30vw] z-0"
+                  />
                 </div>
               </div>
             </div>
