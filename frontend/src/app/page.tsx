@@ -34,7 +34,7 @@ export default function Main() {
         >
           <img
             src="/img/rat.svg"
-            className="bottom-14 z-100"
+            className="bottom-[4vw] z-100"
             style={{
               position: 'absolute',
               left: `${translateX}vw`, // Move image from right to left
@@ -42,11 +42,11 @@ export default function Main() {
             }}
           />
 
-          <div className="flex flex-col pl-[50vw] pt-[8vw] absolute top-[5px]">
-            <h1 className="text-4xl font-bold my-8 tracking-tight">
+          <div className="flex flex-col pl-[45vw] pt-[5vw] absolute top-[5px]">
+            <h1 className="text-[3vw] font-bold my-4 tracking-tight">
               We&#39;re making a list.
             </h1>
-            <img src="/img/sign1.jpg" className="w-[500px]"></img>
+            <img src="/img/sign1.jpg" className="w-[40vw]"></img>
           </div>
 
           <img
@@ -62,7 +62,7 @@ export default function Main() {
         >
           <img
             src="/img/rat.svg"
-            className="bottom-14 z-100 transform scale-x-[-1]"
+            className="bottom-[4vw] z-100 transform scale-x-[-1]"
             style={{
               position: 'absolute',
               right: `${translateX + 40}vw`, // Move image from right to left
@@ -71,7 +71,7 @@ export default function Main() {
           />
           <img
             src="/img/rat.svg"
-            className="bottom-14 z-100 transform scale-x-[-1]"
+            className="bottom-[4vw] z-100 transform scale-x-[-1]"
             style={{
               position: 'absolute',
               right: `${translateX + 50}vw`, // Move image from right to left
@@ -79,8 +79,8 @@ export default function Main() {
             }}
           />
 
-          <div className="flex flex-col pl-[10vw] pt-[8vw] absolute top-[20px]">
-            <h1 className="text-4xl font-bold my-8 tracking-tight">
+          <div className="flex flex-col pl-[10vw] pt-[5vw] absolute top-[5px]">
+            <h1 className="text-[3vw] font-bold my-4 tracking-tight">
               We&#39;re checking it twice.
             </h1>
             <img src="/img/sign2.png" className="w-[500px]"></img>
@@ -94,13 +94,13 @@ export default function Main() {
           {/* </div> */}
         </section>
 
-        <section className="bg-neutral-900 h-[106vh] relative overflow-hidden">
-          <h1 className="text-4xl font-bold text-white m-auto text-center tracking-tight relative py-12 z-20">
+        <section className="bg-neutral-900 relative p-12 overflow-hidden">
+          <h1 className="text-[3vw] font-bold text-white m-auto text-center tracking-tight relative mb-10 z-20">
             We&#39;ve finally found out which lines are:
           </h1>
 
           <div className="relative">
-            <div className="flex justify-center -space-x-8 z-20">
+            <div className="flex justify-center gap-4 z-20">
               <div className="flex flex-col items-center">
                 <img src="/img/naughty.svg" alt="" className="z-20 m-4" />
                 <br></br>
@@ -114,7 +114,7 @@ export default function Main() {
                 <img
                   src="/img/platform.svg"
                   alt=""
-                  className="z-10 w-[300px] pt-[200px]"
+                  className="z-10 w-[20vw] pt-[5vw]"
                 />
               </div>
               <div className="flex flex-col items-center">
@@ -129,14 +129,19 @@ export default function Main() {
         </section>
 
         <section
-          className="scroll-section overflow-hidden relative bg-repeat bg-[size:160px] bg-opacity-50 py-12"
+          className="scroll-section overflow-hidden relative bg-repeat bg-[size:160px] bg-opacity-50"
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
-          <h1 className="text-4xl font-bold m-auto text-center tracking-tight relative py-12 z-10">
+          <h1 className="text-[3vw] font-bold m-auto text-center tracking-tight leading-tight relative py-12 z-10">
             It&#39;s tiiiiiiime..... <br></br>See the naughty and nice lines for
             the month of:
           </h1>
           <MonthToggle />
+          <img
+            src="/img/swipe-station.svg"
+            className="relative w-full bottom-0"
+            alt=""
+          />
         </section>
       </main>
     </div>
