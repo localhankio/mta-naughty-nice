@@ -12,7 +12,7 @@ Gifan Thadathil
 ## Project Description
 Website: [https://mta-naughty-nice2.vercel.app/](https://mta-naughty-nice2.vercel.app/)
 
-Companies have Employee of the Month, and the New Zealand zoo has Naughty Penguin of the Month, but do we know which 
+Companies have Employee of the Month, and the New Zealand National Aquarium has [Naughty Penguin of the Month](https://www.instagram.com/nationalaquariumnz/p/Bj0eWcSh0Xm/, but do we know which 
 service is the naughtiest of the month? And which one is the nicest? We rank each service based on three criteria to 
 award the Naughtiest and Nicest Line of the Month for each month in 2023. The criteria are Crowdedness, Timeliness, and 
 Reliability. Each category is weighted the same, and the sum of all three ranks is the final score we use to judge lines,
@@ -23,7 +23,7 @@ We measured Crowdedness by calculating the deviation in volume of ridership for 
 that train’s average monthly ridership for the year. To calculate monthly ridership, we summed ridership across each 
 station for a line from the Subway Hourly Ridership dataset. If multiple services stop at a station, we divide the 
 ridership by the number of lines at that station and attribute the divided ridership equally across all lines. If 
-Times Square-42nd Street has 15,000 riders per day and 8 services, we add 1,875 riders to each service for that day. It 
+Times Square-42nd Street has 15,000 riders per day and 8 services, we add 1,875 riders (15,000/8) to each service for that day. It 
 is a rough estimate for total ridership per service.
 
 The service with the best performance in this category is the one that is least crowded in that month relative to their 
@@ -51,4 +51,4 @@ given month. A higher count of major incidents results in a lower ranking for th
 * Several trains had the highest Reliability rank of a month, but poor ranks in Crowdedness and Timeliness, such as the D train in December 2023.
 * The L train won Nicest Train of the Month the most, for a total of 5 times in 2023
 * The M train won Naughtiest Train of the Month the most, also for 5 times in 2023
-* Only IND lines won the Naughtiest awards. Naughty system, huh?
+* Only IND lines won the Naughtiest awards.
