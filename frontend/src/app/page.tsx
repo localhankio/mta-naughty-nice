@@ -42,11 +42,11 @@ export default function Main() {
             }}
           />
 
-          <div className="flex flex-col pl-[45vw] pt-[5vw] absolute top-[5px]">
+          <div className="flex flex-col pl-[48vw] pt-[6vw] absolute top-[5px]">
             <h1 className="text-[3vw] font-bold my-4 tracking-tight">
               We&#39;re making a list.
             </h1>
-            <img src="/img/sign1.jpg" className="w-[40vw]"></img>
+            <img src="/img/sign1.jpg" className="w-[32vw]"></img>
           </div>
 
           <img
@@ -118,7 +118,7 @@ export default function Main() {
                 <img
                   src="/img/platform.svg"
                   alt=""
-                  className="z-10 w-[20vw] pt-[5vw]"
+                  className="z-10 w-[30vw] pt-[5vw]"
                 />
               </div>
               <div className="flex flex-col items-center">

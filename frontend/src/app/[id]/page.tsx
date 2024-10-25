@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import TextBlock from '../components/text-block'
+import Link from 'next/link'
 
 type MtaData = {
   month: string
@@ -184,8 +185,8 @@ export default function MonthPage() {
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
           <div className="m-auto">
-            <div className="grid grid-cols-2 justify-center w-[80vw] m-auto">
-              <div className="grid grid-rows-3  p-[5vw] max-w-[40vw] gap-16 border-r-2 border-black">
+            <div className="grid grid-cols-2 grid-auto-rows justify-center w-[80vw] m-auto">
+              <div className="grid grid-rows-3 p-[5vw] max-w-[40vw] gap-16 border-r-2 border-black">
                 <TextBlock
                   overline="BUSYNESS"
                   color="bg-[#FF8840]"
@@ -221,33 +222,40 @@ export default function MonthPage() {
                 <TextBlock
                   overline="MAJOR INCIDENTS"
                   color="bg-[#9FC438]"
-                  header={monthData.naughty_reliability_rank}
-                  description={monthData.naughty_reliability_note}
+                  header={monthData.nice_reliability_rank}
+                  description={monthData.nice_reliability_note}
                 />
               </div>
-
-              <div className="flex flex-col my-16"></div>
             </div>
           </div>
         </section>
+
+        <section
+          className="overflow-hidden text-white relative bg-cover bg-fixed bg-center"
+          style={{ backgroundImage: `url(${subwayBgUrl})` }}
+        >
+          <h1 className="text-[3vw] font-bold font-white m-auto text-center tracking-tight leading-tight relative pt-20 z-10">
+            Thanks for stopping by!
+          </h1>
+          <Link href={`/`}>
+            <button className="px-8 py-10 m-auto flex flex-col items-center transform transition-transform duration-300 ease-in-out hover:translate-y-[-8px]">
+              <p className="font-mono uppercase mb-4">Back to the station!</p>
+
+              <img
+                src="/img/metrocard.png"
+                className="transform transition-transform duration-300 ease-in-out hover:shadow-[0_4px_100px_#FFC801]"
+                alt=""
+              />
+            </button>
+          </Link>
+
+          <img
+            src="/img/swipe-station.svg"
+            className="relative w-full bottom-0"
+            alt=""
+          />
+        </section>
       </main>
     </div>
-
-    // <div>
-    //   <h2>Data for {monthData.month}</h2>
-    //   <p>Naughty Line: {monthData.naughty_line}</p>
-    //   <p>Nice Line: {monthData.nice_line}</p>
-    //   <p>Naughty Busyness Rank: {monthData.naughty_busyness_rank}</p>
-    //   <p>Naughty On-Time Rank: {monthData.naughty_ontime_rank}</p>
-    //   <p>Naughty On-Time Note: {monthData.naughty_ontime_note}</p>
-    //   <p>Naughty Reliability Rank: {monthData.naughty_reliability_rank}</p>
-    //   <p>Naughty Reliability Note: {monthData.naughty_reliability_note}</p>
-    //   <p>Nice Busyness Rank: {monthData.nice_busyness_rank}</p>
-    //   <p>Nice Busyness Note: {monthData.nice_busyness_note}</p>
-    //   <p>Nice On-Time Rank: {monthData.nice_ontime_rank}</p>
-    //   <p>Nice On-Time Note: {monthData.nice_ontime_note}</p>
-    //   <p>Nice Reliability Rank: {monthData.nice_reliability_rank}</p>
-    //   <p>Nice Reliability Note: {monthData.nice_reliability_note}</p>
-    // </div>
   )
 }
