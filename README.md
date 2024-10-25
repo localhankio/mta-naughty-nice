@@ -1,4 +1,4 @@
-# MTA Naughty Train Line & Nice Train Line
+# MTA Naughty Line, Nice Line
 Awarding the Naughty train line of the month, and Nice train line of the month.
 
 ## Contributors
@@ -12,7 +12,7 @@ Gifan Thadathil
 ## Project Description
 Website: [https://mta-naughty-nice2.vercel.app/](https://mta-naughty-nice2.vercel.app/)
 
-Companies have Employee of the Month, and the New Zealand National Aquarium has [Naughty Penguin of the Month](https://www.instagram.com/nationalaquariumnz/p/Bj0eWcSh0Xm/, but do we know which 
+Companies have Employee of the Month, and the New Zealand National Aquarium has [Naughty Penguin of the Month](https://www.instagram.com/nationalaquariumnz/p/Bj0eWcSh0Xm/), but do we know which 
 service is the naughtiest of the month? And which one is the nicest? We rank each service based on three criteria to 
 award the Naughtiest and Nicest Line of the Month for each month in 2023. The criteria are Crowdedness, Timeliness, and 
 Reliability. Each category is weighted the same, and the sum of all three ranks is the final score we use to judge lines,
