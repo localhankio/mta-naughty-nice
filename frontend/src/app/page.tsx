@@ -5,7 +5,7 @@ import MonthToggle from './components/month-toggle'
 
 export default function Main() {
   const imageUrl = '/img/tile-grid.png' // or a URL from props/state
-  const subwayBgUrl = '/img/bg-rail.svg' // or a URL from props/state
+  // const subwayBgUrl = '/img/bg-rail.svg' // or a URL from props/state
 
   const [translateX, setTranslateX] = useState(100) // Start from right
 
