@@ -83,7 +83,7 @@ export default function Main() {
             <h1 className="text-[3vw] font-bold my-4 tracking-tight">
               We&#39;re checking it twice.
             </h1>
-            <img src="/img/sign2.png" className="w-[500px]"></img>
+            <img src="/img/sign2.png" className="w-[40vw]"></img>
           </div>
           <img
             src="/img/stairwell-section.svg"
