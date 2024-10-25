@@ -43,7 +43,7 @@ export default function Main() {
           />
 
           <div className="flex flex-col pl-[48vw] pt-[6vw] absolute top-[5px]">
-            <h1 className="text-[3vw] max-[400px]:text-[20px] leading-tight font-bold my-4 tracking-tight">
+            <h1 className="text-[3vw] max-[500px]:text-[20px] leading-tight font-bold my-4 tracking-tight">
               We&#39;re making a list.
             </h1>
             <img src="/img/sign1.jpg" className="w-[32vw]"></img>
@@ -80,7 +80,7 @@ export default function Main() {
           />
 
           <div className="flex flex-col pl-[10vw] pt-[5vw] absolute top-[5px]">
-            <h1 className="text-[3vw] max-[400px]:text-[20px] font-bold my-4 tracking-tight">
+            <h1 className="text-[3vw] max-[500px]:text-[20px] font-bold my-4 tracking-tight">
               We&#39;re checking it twice.
             </h1>
             <img src="/img/sign2.png" className="w-[40vw]"></img>
@@ -95,12 +95,12 @@ export default function Main() {
         </section>
 
         <section className="bg-neutral-900 relative p-20 overflow-hidden">
-          <h1 className="text-[3vw] max-[400px]:text-[20px] font-bold text-white m-auto text-center tracking-tight relative mb-10 z-20">
+          <h1 className="text-[3vw] max-[500px]:text-[20px] font-bold text-white m-auto text-center tracking-tight relative mb-10 z-20">
             We&#39;ve finally found out which lines are:
           </h1>
 
           <div className="relative">
-            <div className="flex flex-row max-[400px]:flex-col justify-center gap-4 z-20">
+            <div className="flex flex-row max-[500px]:flex-col justify-center gap-4 z-20">
               <div className="flex flex-col items-center">
                 <img src="/img/naughty.svg" alt="" className="z-20 m-4" />
                 <br></br>
@@ -116,13 +116,13 @@ export default function Main() {
                 <img
                   src="/img/or.svg"
                   alt=""
-                  className="z-20 m-4 max-[400px]:mt-12"
+                  className="z-20 m-4 max-[500px]:mt-12"
                 />
                 <br></br>
                 <img
                   src="/img/platform.svg"
                   alt=""
-                  className="z-10 w-[30vw] max-[400px]:hidden pt-[5vw]"
+                  className="z-10 w-[30vw] max-[500px]:hidden pt-[5vw]"
                 />
               </div>
               <div className="flex flex-col items-center">
@@ -144,7 +144,7 @@ export default function Main() {
           className="scroll-section overflow-hidden relative bg-repeat bg-[size:160px] bg-opacity-50"
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
-          <h1 className="text-[3vw] max-[400px]:text-[20px] font-bold m-4 text-center tracking-tight leading-tight relative py-12 z-10">
+          <h1 className="text-[3vw] max-[500px]:text-[20px] font-bold m-4 text-center tracking-tight leading-tight relative py-12 z-10">
             It&#39;s tiiiiiiime..... <br></br>See the naughty and nice lines for
             the month of:
           </h1>

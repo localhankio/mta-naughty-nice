@@ -132,9 +132,9 @@ export default function MonthPage() {
           style={{ backgroundImage: `url(${subwayBgUrl})` }}
         >
           <div className="relative">
-            <div className="flex justify-center m-10 max-[400px]:mx-4 max-[400px]:my-6">
-              <div className="grid grid-col items-center p-8 max-[400px]:p-2">
-                <h2 className="text-[3vw] max-[400px]:text-[20px] font-bold leading-tight text-white text-center tracking-tight relative">
+            <div className="flex justify-center m-10 max-[500px]:mx-4 max-[500px]:my-6">
+              <div className="grid grid-col items-center p-8 max-[500px]:p-2">
+                <h2 className="text-[3vw] max-[500px]:text-[20px] font-bold leading-tight text-white text-center tracking-tight relative">
                   The Naughty Line
                 </h2>
                 <div className="flex gap-[8px] justify-center my-6">
@@ -165,8 +165,8 @@ export default function MonthPage() {
                 </div>
               </div>
 
-              <div className="grid grid-col items-center p-8 max-[400px]:p-2">
-                <h2 className="text-[3vw] max-[400px]:text-[20px] font-bold leading-tight text-white text-center tracking-tight relative">
+              <div className="grid grid-col items-center p-8 max-[500px]:p-2">
+                <h2 className="text-[3vw] max-[500px]:text-[20px] font-bold leading-tight text-white text-center tracking-tight relative">
                   The Nice Line
                 </h2>
                 <div className="flex gap-[8px] justify-center my-6">
@@ -205,8 +205,8 @@ export default function MonthPage() {
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
           <div className="m-auto">
-            <div className="grid grid-cols-2 grid-auto-rows justify-center w-[80vw] max-[400px]:w-full m-auto">
-              <div className="grid grid-rows-3 p-[7vw] gap-16 max-[400px]:gap-8 border-r-2 border-black">
+            <div className="grid grid-cols-2 grid-auto-rows justify-center w-[80vw] max-[500px]:w-full m-auto">
+              <div className="grid grid-rows-3 p-[7vw] gap-16 max-[500px]:gap-8 border-r-2 border-black">
                 <TextBlock
                   overline="CROWDEDNESS"
                   color="bg-[#FF8840]"
@@ -226,7 +226,7 @@ export default function MonthPage() {
                   description={monthData.naughty_reliability_note}
                 />
               </div>
-              <div className="grid grid-rows-3 p-[7vw] gap-16 max-[400px]:gap-8">
+              <div className="grid grid-rows-3 p-[7vw] gap-16 max-[500px]:gap-8">
                 <TextBlock
                   overline="CROWDEDNESS"
                   color="bg-[#FF8840]"
@@ -254,7 +254,7 @@ export default function MonthPage() {
           className="overflow-hidden text-white relative bg-cover bg-fixed bg-center"
           style={{ backgroundImage: `url(${subwayBgUrl})` }}
         >
-          <h1 className="text-[3vw] max-[400px]:text-[24px] font-bold font-white m-auto text-center tracking-tight leading-tight relative pt-20 z-10">
+          <h1 className="text-[3vw] max-[500px]:text-[24px] font-bold font-white m-auto text-center tracking-tight leading-tight relative pt-20 z-10">
             Thanks for stopping by!
           </h1>
           <Link href={`/`}>
