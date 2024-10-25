@@ -137,44 +137,64 @@ export default function MonthPage() {
                 <h2 className="text-[3vw] font-bold text-white text-center tracking-tight relative">
                   The Naughty Line
                 </h2>
-                <div
-                  className="rounded-full w-[50px] h-[50px] flex items-center justify-center m-8"
-                  style={{
-                    backgroundColor:
-                      subway_lines[monthData.naughty_line as SubwayLineKeys],
-                  }}
-                >
-                  <h2 className="text-3xl font-bold text-white text-center">
-                    {monthData.naughty_line}
-                  </h2>
+                <div className="flex gap-[8px] my-6">
+                  {monthData.naughty_line.split('').map((char, index) => (
+                    <div
+                      key={index}
+                      className="rounded-full w-[64px] h-[64px] flex items-center justify-center "
+                      style={{
+                        backgroundColor:
+                          subway_lines[
+                            monthData.naughty_line[0] as SubwayLineKeys
+                          ], // use color of first letter only
+                      }}
+                    >
+                      <h2 className="text-4xl font-bold text-white text-center">
+                        {char}
+                      </h2>
+                    </div>
+                  ))}
                 </div>
-                <img
-                  src="/img/naughty-train.svg"
-                  alt=""
-                  className="z-0 max-w-[30vw]"
-                />
+
+                <div className="transform transition-transform duration-300 ease-in-out hover:shadow-[0_4px_100px_#E70000] hover:translate-y-[-8px] rounded-full">
+                  <img
+                    src="/img/naughty-train.svg"
+                    alt=""
+                    className="z-0 max-w-[30vw]"
+                  />
+                </div>
               </div>
 
               <div className="flex flex-col items-center p-10">
                 <h2 className="text-[3vw] font-bold text-white text-center tracking-tight relative">
                   The Nice Line
                 </h2>
-                <div
-                  className="rounded-full w-[50px] h-[50px] flex items-center justify-center m-8"
-                  style={{
-                    backgroundColor:
-                      subway_lines[monthData.nice_line as SubwayLineKeys],
-                  }}
-                >
-                  <h2 className="text-3xl font-bold text-white text-center">
-                    {monthData.nice_line}
-                  </h2>
+                <div className="flex gap-[8px] my-6">
+                  {monthData.nice_line.split('').map((char, index) => (
+                    <div
+                      key={index}
+                      className="rounded-full w-[64px] h-[64px] flex items-center justify-center "
+                      style={{
+                        backgroundColor:
+                          subway_lines[
+                            monthData.nice_line[0] as SubwayLineKeys
+                          ], // use color of first letter only
+                      }}
+                    >
+                      <h2 className="text-4xl font-bold text-white text-center">
+                        {char}
+                      </h2>
+                    </div>
+                  ))}
                 </div>
-                <img
-                  src="/img/nice-train.svg"
-                  alt=""
-                  className="z-0 max-w-[30vw]"
-                />
+
+                <div className="transform transition-transform duration-300 ease-in-out hover:shadow-[0_4px_100px_#11760E] hover:translate-y-[-8px] rounded-full">
+                  <img
+                    src="/img/nice-train.svg"
+                    alt=""
+                    className="z-0 max-w-[30vw]"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -186,41 +206,41 @@ export default function MonthPage() {
         >
           <div className="m-auto">
             <div className="grid grid-cols-2 grid-auto-rows justify-center w-[80vw] m-auto">
-              <div className="grid grid-rows-3 p-[5vw] max-w-[40vw] gap-16 border-r-2 border-black">
+              <div className="grid grid-rows-3 p-[7vw] max-w-[40vw] gap-16 border-r-2 border-black">
                 <TextBlock
-                  overline="BUSYNESS"
+                  overline="CROWDEDNESS"
                   color="bg-[#FF8840]"
                   header={monthData.naughty_busyness_rank}
                   description={monthData.naughty_busyness_note}
                 />
                 <TextBlock
-                  overline="TARDINESS"
+                  overline="TIMELINESS"
                   color="bg-[#FFC801]"
                   header={monthData.naughty_ontime_rank}
                   description={monthData.naughty_ontime_note}
                 />
                 <TextBlock
-                  overline="MAJOR INCIDENTS"
+                  overline="RELIABILITY"
                   color="bg-[#9FC438]"
                   header={monthData.naughty_reliability_rank}
                   description={monthData.naughty_reliability_note}
                 />
               </div>
-              <div className="grid grid-rows-3 p-[5vw] max-w-[40vw] gap-16">
+              <div className="grid grid-rows-3 p-[7vw] max-w-[40vw] gap-16">
                 <TextBlock
-                  overline="BUSYNESS"
+                  overline="CROWDEDNESS"
                   color="bg-[#FF8840]"
                   header={monthData.nice_busyness_rank}
                   description={monthData.nice_busyness_note}
                 />
                 <TextBlock
-                  overline="TARDINESS"
+                  overline="TIMELINESS"
                   color="bg-[#FFC801]"
                   header={monthData.nice_ontime_rank}
                   description={monthData.nice_ontime_note}
                 />
                 <TextBlock
-                  overline="MAJOR INCIDENTS"
+                  overline="RELIABILITY"
                   color="bg-[#9FC438]"
                   header={monthData.nice_reliability_rank}
                   description={monthData.nice_reliability_note}
