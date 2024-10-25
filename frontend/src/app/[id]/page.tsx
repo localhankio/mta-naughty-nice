@@ -119,7 +119,7 @@ export default function MonthPage() {
 
             <div className="p-4 m-auto bg-[#73A29E] inline-block">
               <div className="px-4 py-3 bg-[#1A2D70] inline-block">
-                <p className="text-center font-mono uppercase text-white text-5xl">
+                <p className="text-center font-mono uppercase text-white text-4xl">
                   {monthData.month}
                 </p>
               </div>
@@ -132,12 +132,12 @@ export default function MonthPage() {
           style={{ backgroundImage: `url(${subwayBgUrl})` }}
         >
           <div className="relative">
-            <div className="flex justify-center m-10">
-              <div className="flex flex-col items-center p-10">
-                <h2 className="text-[3vw] font-bold text-white text-center tracking-tight relative">
+            <div className="flex justify-center m-10 max-[400px]:mx-4 max-[400px]:my-6">
+              <div className="grid grid-col items-center p-8 max-[400px]:p-2">
+                <h2 className="text-[3vw] max-[400px]:text-[20px] font-bold leading-tight text-white text-center tracking-tight relative">
                   The Naughty Line
                 </h2>
-                <div className="flex gap-[8px] my-6">
+                <div className="flex gap-[8px] justify-center my-6">
                   {monthData.naughty_line.split('').map((char, index) => (
                     <div
                       key={index}
@@ -160,16 +160,16 @@ export default function MonthPage() {
                   <img
                     src="/img/naughty-train.svg"
                     alt=""
-                    className="z-0 max-w-[30vw]"
+                    className="z-0 m-auto max-w-[30vw]"
                   />
                 </div>
               </div>
 
-              <div className="flex flex-col items-center p-10">
-                <h2 className="text-[3vw] font-bold text-white text-center tracking-tight relative">
+              <div className="grid grid-col items-center p-8 max-[400px]:p-2">
+                <h2 className="text-[3vw] max-[400px]:text-[20px] font-bold leading-tight text-white text-center tracking-tight relative">
                   The Nice Line
                 </h2>
-                <div className="flex gap-[8px] my-6">
+                <div className="flex gap-[8px] justify-center my-6">
                   {monthData.nice_line.split('').map((char, index) => (
                     <div
                       key={index}
@@ -192,7 +192,7 @@ export default function MonthPage() {
                   <img
                     src="/img/nice-train.svg"
                     alt=""
-                    className="z-0 max-w-[30vw]"
+                    className="z-0 m-auto max-w-[30vw]"
                   />
                 </div>
               </div>
@@ -205,8 +205,8 @@ export default function MonthPage() {
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
           <div className="m-auto">
-            <div className="grid grid-cols-2 grid-auto-rows justify-center w-[80vw] m-auto">
-              <div className="grid grid-rows-3 p-[7vw] max-w-[40vw] gap-16 border-r-2 border-black">
+            <div className="grid grid-cols-2 grid-auto-rows justify-center w-[80vw] max-[400px]:w-full m-auto">
+              <div className="grid grid-rows-3 p-[7vw] gap-16 max-[400px]:gap-8 border-r-2 border-black">
                 <TextBlock
                   overline="CROWDEDNESS"
                   color="bg-[#FF8840]"
@@ -226,7 +226,7 @@ export default function MonthPage() {
                   description={monthData.naughty_reliability_note}
                 />
               </div>
-              <div className="grid grid-rows-3 p-[7vw] max-w-[40vw] gap-16">
+              <div className="grid grid-rows-3 p-[7vw] gap-16 max-[400px]:gap-8">
                 <TextBlock
                   overline="CROWDEDNESS"
                   color="bg-[#FF8840]"
@@ -254,7 +254,7 @@ export default function MonthPage() {
           className="overflow-hidden text-white relative bg-cover bg-fixed bg-center"
           style={{ backgroundImage: `url(${subwayBgUrl})` }}
         >
-          <h1 className="text-[3vw] font-bold font-white m-auto text-center tracking-tight leading-tight relative pt-20 z-10">
+          <h1 className="text-[3vw] max-[400px]:text-[24px] font-bold font-white m-auto text-center tracking-tight leading-tight relative pt-20 z-10">
             Thanks for stopping by!
           </h1>
           <Link href={`/`}>
