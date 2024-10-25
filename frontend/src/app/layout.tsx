@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import Head from 'next/head'
+
 import './globals.css'
 
 const helveticaBold = localFont({
@@ -35,19 +35,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <title>Your Page Title</title>
+      <head>
         <link rel="icon" href="favicon.ico" sizes="any" />
-
-        <meta property="og:title" content="MTA Naughty or Nice" />
-        <meta
-          property="og:description"
-          content="Has your train been naughty or nice?"
-        />
         <meta property="og:image" content="/img/open-graph.svg" />
-        <meta property="og:url" content="https://yourwebsite.com/your-page" />
-      </Head>
-
+      </head>
       <body
         className={`${supplyMono.variable} ${helveticaBold.variable} ${helvetica.variable} ${helveticaLight.variable} antialiased`}
       >
