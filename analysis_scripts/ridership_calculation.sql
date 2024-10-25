@@ -1,8 +1,7 @@
--- noinspection SqlDialectInspectionForFile
-
---
-Author: Kristina Cheng
---
+----------------------
+---Author: Kristina Cheng
+---Ridership calculation
+----------------------
 create table mta_monthly_ridership_by_line as
 select
     (regexp_match(station_complex, '\((.*?)\)'))[1] as line,
